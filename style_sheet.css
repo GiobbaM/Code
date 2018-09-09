@@ -1,0 +1,651 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	}
+	body{
+	font-family: 'Lato', sans-serif;
+}
+	ul {
+	list-style: none;
+}
+	a {
+	text-decoration: none;
+	color: inherit;
+}
+	p {
+	text-align: justify;
+}
+
+/* ------------------HOME ------------------->*/
+.navBar {
+height: 100vh;
+background-image: url("images/intoBackground.jpg");
+background-size: cover;
+color: white;
+font-size: 1.2em;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . . . nav1 nav1 nav1 nav1 nav1 nav1 . ."
+". . . . presentation presentation presentation presentation presentation presentation . .";
+}
+.nav1{
+grid-area: nav1;
+margin-top: 3vh;
+}
+.presentation{
+grid-area: presentation;
+margin: 30vh 0 0;
+}
+.mainNavL {
+float: left;	
+}
+.mainNavM {
+float: left;
+margin: 0 20vw;
+}
+.mainNavR {
+float: left;
+}
+.navLinkHP {
+width:5vw;
+text-align:center;
+}
+.navLinkHP:hover {
+border-bottom: white 2px solid;
+}
+.firstText{
+font-size: 3em;	
+}
+.secondText{
+font-size: 1.em;	
+}
+.scrollicon{
+width: 4vw;
+margin: 15vh 14vw 0;
+}
+
+.servicesWrap {
+margin: 20vh 0 0vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . title title title title title . . . . ."
+". . servicesIcon servicesIcon servicesIcon servicesIcon servicesIcon servicesIcon servicesIcon servicesIcon . .";
+}
+.title{
+grid-area: title;
+font-family: 'Roboto', sans-serif;
+}
+.titleStyle{
+font-size: 45px;
+color:#ef6c62;
+font-weight:900;
+}
+.boxTitle{
+width: 25vw;
+height: 0.5vh;
+background-color: #ef6c62;
+}
+.servicesIcon{
+grid-area: servicesIcon;
+margin-top: 8vh;
+}
+.iconPlusText{
+float: left;
+background-color: white;
+border: #ef6c62 solid 5px;
+width: 13vw;
+height: 35vh;
+margin-right: 3.6vw;
+color: black;
+box-shadow: 0;
+}
+.iconPlusText:hover{
+background-color: #ef6c62;
+color: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+.iconPlusTextR{
+float: left;
+border: #ef6c62 solid 5px;
+width: 13vw;
+height: 35vh;
+background-color: white;
+color: black;
+box-shadow: 0;
+}
+.iconPlusTextR:hover{
+background-color: #ef6c62;
+color: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+#servicesIconStyle1 {
+width: 12vw;
+margin-left: 0.7vw;
+display:block;
+}
+#servicesIconStyleHover1{
+width: 12vw;
+margin-left: 0.7vw;
+display:none;
+}
+#servicesIconStyle2 {
+width: 12vw;
+margin-left: 0.7vw;
+display:block;
+}
+#servicesIconStyleHover2{
+width: 12vw;
+margin-left: 0.7vw;
+display:none;
+}
+#servicesIconStyle3 {
+width: 12vw;
+margin-left: 0.7vw;
+display:block;
+}
+#servicesIconStyleHover3{
+width: 12vw;
+margin-left: 0.7vw;
+display:none;
+}
+#servicesIconStyle4 {
+width: 12vw;
+margin-left: 0.7vw;
+display:block;
+}
+#servicesIconStyleHover4{
+width: 12vw;
+margin-left: 0.7vw;
+display:none;
+}
+#servicesIconTextStyle{
+margin:-3vh 1.2vw;
+font-size: 1.5em;
+text-align:center;
+}
+
+.latestWorkWrap {
+height: 115vh;
+background-image: url(images/latestWork.jpg);
+background-size: cover;
+margin: 30vh 0 20vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . title title title title title . . . . ."
+". . . . . . bigLabel bigLabel bigLabel bigLabel . .";
+}
+.bigLabel{
+grid-area: bigLabel;
+border: 5px solid #ef6c62;
+background-color: white;
+width: 30vw;
+height: 30vh;
+padding: 15px 20px 20px;
+}
+.latestWorkTitle{
+line-height: 2;
+font-family: 'Roboto', sans-serif;
+font-weight:900;
+font-size:2em;
+color: #ef6c62;;
+}
+.textLatestWork{
+font-size: 1em;
+text-align: justify;
+}
+.buttonAndArrow{
+margin: 0 8vw;
+}
+.buttonStyleLatestWork{
+background-color: #ef6c62;
+font-size: 14px;
+color: white;
+border: none;
+cursor: pointer;
+margin: 3vh 0vw;
+width: 12vw;
+height: 6vh;
+border-radius: 0.8vw;
+}
+#iconButtonAnimation{
+padding-top: 3.2vh;	
+transition: 1s;
+display: block;
+font-size: 30px;
+color: #ef6c62;
+float: right;
+}
+.buttonStyleLatestWork:hover + #iconButtonAnimation{
+transform: translate(-45px,0px);
+color: white; 
+}
+
+.contactWrap {
+margin: 0vh 0 10vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . title title title title title . . . . ."
+". . mailContact mailContact mailContact mailContact linkedinContact linkedinContact linkedinContact linkedinContact . .";
+}
+.mailContact{
+grid-area:mailContact;
+margin-top:5vh;
+}
+.linkedinContact{
+grid-area:linkedinContact;
+margin-top:5vh;
+}
+.contactIcon{
+float:left;
+height: 10vh;	
+}
+.textContactHomePage{
+padding: 5.5vh 0 0 6vw;
+font-size:25px;
+}
+/* <------------------ HOME -------------------*/
+/* <------------------ FOOTER -------------------*/
+.footerIcon {
+float:left;
+width: 3vw;
+margin: 0 0 2vh 2vw;
+}
+/* <------------------ FOOTER -------------------*/
+/* <------------------SERVICES -------------------> */
+.servicesPageWrap {
+margin: 15vh 0 00vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . title title title title title . . . . ."
+". . iconServicesPage1 iconServicesPage1 iconServicesPage1 textServices1 textServices1 textServices1 textServices1 textServices1 . ."
+". . iconServicesPage2 iconServicesPage2 iconServicesPage2 textServices2 textServices2 textServices2 textServices2 textServices2 . ."
+". . iconServicesPage3 iconServicesPage3 iconServicesPage3 textServices3 textServices3 textServices3 textServices3 textServices3 . ."
+". . iconServicesPage4 iconServicesPage4 iconServicesPage4 textServices4 textServices4 textServices4 textServices4 textServices4 . .";
+}
+.iconServicesPage1{
+grid-area: iconServicesPage1;
+}
+.textServices1{
+grid-area: textServices1;
+padding-top: 8vh;
+}
+.iconServicesPage2{
+grid-area: iconServicesPage2;
+}
+.textServices2{
+grid-area: textServices2;
+padding-top: 8vh;
+}
+.iconServicesPage3{
+grid-area: iconServicesPage3;
+}
+.textServices3{
+grid-area: textServices3;
+padding-top: 8vh;
+}
+.iconServicesPage4{
+grid-area: iconServicesPage4;
+margin-top: -5vh;
+}
+.textServices4{
+grid-area: textServices4;
+padding-top: 8vh;
+}
+/* <------------------SERVICES -------------------> */
+/* ------------------GENERAL NAV BAR ------------------->*/
+.navBarGeneral {
+color: #6f6f6f;
+font-size: 1.2em;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1 . ."
+}
+.nav1{
+grid-area: nav1;
+margin-top: 3vh;
+}
+.mainNavHome {
+float: left;
+font-weight: bold;
+}
+.mainNavL {
+float: right;	
+}
+.mainNavM {
+float: right;
+margin: 0 10vw;
+}
+.mainNavR {
+float: right;
+}
+.navLink {
+width:5vw;
+text-align:center;
+}
+.active, .navLink:hover {
+border-bottom: #ef6c62 2px solid;
+}
+/* ------------------ GENERAL NAV BAR ------------------->*/
+/* ------------------ CONTACT ------------------->*/
+.contactPageWrap {
+margin: 15vh 0 10vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(4, auto);
+grid-template-areas:
+". . imageContact imageContact imageContact imageContact imageContact imageContact imageContact imageContact. ."
+". . title title title title title . . . . ."
+". . contactInfo contactInfo contactInfo contactInfo textContact textContact textContact textContact . ."
+}
+.imageContact {
+grid-area: imageContact;
+margin: 0 0 7vh;
+height: 46.4vh;
+}
+#boxTitleContact{
+width: 30vw;
+}
+.contactInfo{
+grid-area: contactInfo;
+}
+.iconContactPage{
+float:left;
+height: 7vh;	
+}
+.textContact{
+grid-area: textContact;
+margin-top: -3vh;
+}
+.textInfoContactPage{
+padding: 3vh 0 0 4vw;
+font-size:25px;
+}
+.mailContactPage{
+margin-bottom: 4vh;
+}
+/* <------------------CONTACT -------------------*/
+/* ------------------ABOUT ------------------->*/
+.introAboutWrap {
+margin: 15vh 0 0vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas:
+". . imageAbout imageAbout imageAbout titleTextIconAbout titleTextIconAbout titleTextIconAbout titleTextIconAbout titleTextIconAbout titleTextIconAbout .";
+}
+.imageAbout {
+grid-area: imageAbout;
+height: 90vh;
+}
+.titleTextIconAbout {
+grid-area: titleTextIconAbout;
+}
+.aboutTitle{
+font-family: 'Roboto', sans-serif;	
+}
+.textAbout{
+margin: 10vh 0 0;
+}
+.iconAbout{
+margin: 0vh 0 0;
+}
+.iconTextAbout{
+margin: 3vh 0 0 7vw;
+float:right;
+}
+.introIconAbout{
+float: left;
+width: 2vw;
+}
+.introIconAboutMail{
+float: left;
+margin: 0.5vh 0 0;
+width: 2vw;
+}
+.introTextAbout {
+padding: 1.5vh 0 0 3vw;
+font-size:20px;
+}
+.studiesWrap {
+margin: -9vh 0 10vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas:
+". . aboutLongTitle aboutLongTitle aboutLongTitle aboutLongTitle aboutLongTitle . . . . ."
+". . logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout . .";
+}
+.aboutLongTitle {
+font-family: 'Roboto', sans-serif;
+grid-area: aboutLongTitle;
+}
+.boxTitleAbout{
+height: 60vh;
+border-top: 0.5vh solid #ef6c62;
+border-right: 0.5vh solid #ef6c62;
+width: 42vw;	
+}
+.logoTextAbout {
+grid-area: logoTextAbout;
+}
+.logoText{
+margin: -55vh 0vw 25vh 25.3vw;
+}
+.courseName{
+font-weight: bold;
+line-height: 3vh;
+}
+.logoStudiesWorkAbout {
+float: left;
+width: 15vw;
+}
+.textStudiesWorkAbout {
+float: left;
+margin: 3vh 0 0 3vw;
+}
+.textStudiesWorkAbout2 {
+float: left;
+margin: 15vh 0 0 3vw;
+}
+.textStudiesWorkAbout3 {
+float: left;
+margin: 4.5vh 0 0 3vw;
+}
+.textStudiesWorkAbout4 {
+float: left;
+margin: 6.5vh 0 0 3vw;
+}
+.workWrap {
+margin: 10vh 0 10vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas:
+". . aboutLongTitle aboutLongTitle aboutLongTitle aboutLongTitle aboutLongTitle . . . . ."
+". . logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout logoTextAbout . .";
+}
+/* <------------------ABOUT -------------------*/
+/* ------------------PROJECT ------------------->*/
+.projectWrap {
+margin: 15vh 0 0;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . title title title title title . . . . ."
+". . picProject1 picProject1 picProject1 picProject1 picProject1 picProject1 picProject1 picProject1 . ."
+". . picProject2 picProject2 picProject2 picProject2 picProject2 picProject2 picProject2 picProject2 . ."
+". . picProject3 picProject3 picProject3 picProject3 picProject3 picProject3 picProject3 picProject3 . ."
+". . picProject4 picProject4 picProject4 picProject4 picProject4 picProject4 picProject4 picProject4 . .";
+}
+
+#titleProjects{
+margin-bottom: 8vh;
+}
+.picProject1 {
+position: relative;
+grid-area: picProject1;
+}
+.picProject2 {
+position: relative;
+grid-area: picProject2;
+}
+.picProject3 {
+position: relative;
+grid-area: picProject3;
+}
+.picProject4 {
+position: relative;
+grid-area: picProject4;
+}
+.projectsPic{
+height: 51.5vh;
+margin-bottom: 5vh;
+}
+.overlayProjects {
+position: absolute;
+bottom: 0;
+background: rgba(239, 108, 98, 0.6);
+width: 100%;
+height: 0;
+transition: .5s ease;
+}
+.picProject1:hover .overlayProjects {
+height: 100%;
+}
+.picProject2:hover .overlayProjects {
+height: 100%;
+}
+.picProject3:hover .overlayProjects {
+height: 100%;
+}
+.picProject4:hover .overlayProjects {
+height: 100%;
+}
+#textOverlay {
+padding: 37vh 0 0 4vw;
+color: white;
+font-size: 20px;
+position: absolute;
+font-weight:bold;
+}
+.projectName{
+width: 25vw;
+font-size:30px;
+border-bottom: white 0.5vh solid;	
+margin-bottom: 2vh;
+}
+.projectInfo{
+width: 13vw;
+border-bottom: white 0.5vh solid;	
+}
+.projectName2{
+width: 14vw;
+font-size:30px;
+border-bottom: white 0.5vh solid;	
+margin-bottom: 2vh;
+}
+.projectName3{
+width: 31vw;
+font-size:30px;
+border-bottom: white 0.5vh solid;	
+margin-bottom: 2vh;
+}
+.projectInfo2{
+width: 10vw;
+border-bottom: white 0.5vh solid;	
+}
+.projectName4{
+width: 28vw;
+font-size:30px;
+border-bottom: white 0.5vh solid;	
+margin-bottom: 2vh;
+}
+/* <------------------PROJECT -------------------*/
+/* ------------------SINGLE PROJECT ------------------->*/
+.singleProjectWrap {
+margin: 15vh 0 0vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1vw;
+grid-template-rows: repeat(2, auto);
+grid-template-areas: 
+". . titleSingleProject titleSingleProject titleSingleProject titleSingleProject titleSingleProject titleSingleProject titleSingleProject . . ."
+". . textSingleProject textSingleProject textSingleProject textSingleProject imageSingleProject imageSingleProject imageSingleProject imageSingleProject . .";
+}
+.titleSingleProject{
+grid-area: titleSingleProject;
+z-index: 1;
+font-family: 'Roboto', sans-serif;
+}
+.titleStyleSingleProject{
+font-size: 66px;
+color:#ef6c62;
+margin-bottom: 3vh;
+line-height: 0.9;
+}
+.boxTitleSingleProject{
+width: 26.2vw;
+height: 0.5vh;
+background-color: #ef6c62;
+}
+.textSingleProject{
+grid-area: textSingleProject;
+margin-top: 6vh;
+}
+#textDescriptionProject{
+margin-bottom: 5vh;
+}
+.infoProjectL{
+margin: 00vh 9.9vw 3vh 0;
+float: left;
+}
+#titleInfoProject{
+font-weight:bolder;
+line-height: 2;
+font-family: 'Roboto', sans-serif;
+font-weight:900;
+}
+.imageSingleProject{
+grid-area: imageSingleProject;
+}
+.imageProject{	
+height:65vh;
+margin-top: -26vh;
+}
+#imageProjectDoughnuts{	
+margin-top: -31vh;
+}
+#imageProjectFrost_Degree{	
+margin-top: -22vh;
+}
+.projectDirectLink{
+text-transform: uppercase;
+font-weight: 900;
+font-family: 'Roboto', sans-serif;
+}
+/* <------------------SINGLE PROJECT -------------------*/
